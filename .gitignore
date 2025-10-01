@@ -2,9 +2,13 @@
 env/
 env_tf/
 
-# Ignore large data files
+# Ignore large data files by default
 *.csv
 *.json
+
+# --- EXCEPTIONS ---
+# Do NOT ignore these specific files needed by the app
+!combined_data.csv
 
 # Ignore other common Python files
 __pycache__/
